@@ -1,0 +1,28 @@
+<div class="container-fluid d-flex justify-content-center align-items-center me-0">
+    <div class="col-md-12 justify-content-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 justify-content-center">
+                <div class="card border-primary">
+                    <div class="card-header fs-3">
+                     Cadastre um usuário
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input [(ngModel)]="user.nome" type="text" class="form-control" id="nome" placeholder="insira seu nome">
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email </label>
+                            <input [(ngModel)]="user.email" type="email" class="form-control" id="email" placeholder="nome@email.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input [(ngModel)]="user.telefone" type="text" class="form-control" id="telefone" placeholder="insira seu telefone">
+                          </div>
+                      <a (click)="cadastrar()" class="btn btn-primary">Cadastrar</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

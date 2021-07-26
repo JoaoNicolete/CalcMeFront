@@ -1,0 +1,37 @@
+<div class="container-fluid d-flex justify-content-center align-items-center me-0">
+    <div class="col-md-12 justify-content-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 justify-content-center">
+                <div class="card border-primary">
+                    <div class="card-header fs-3">
+                    Lista de Usuários
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-success table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Telefone</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                               
+                              <tr *ngFor="let item of listUser">
+                                <th scope="row">{{item.id}}</th>
+                                <td>{{item.nome}}</td>
+                                <td>{{item.email}}</td>
+                                <td>{{item.telefone}}</td>
+                              </tr>
+                         
+                            </tbody>
+                          </table>
+                      <a routerLink='/cadastrar' class="btn btn-primary">Cadastrar</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
